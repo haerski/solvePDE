@@ -11,9 +11,9 @@ localize(Module, Ideal, List) := Module => opts -> (M, P, L) -> (
 )
 
 -- arithmetic multiplicity
-amult = U -> (
-    AssU := myAssMod(U);
-    sum apply(AssU, P -> degree(saturate(U,P)/U)/degree(P))
+amult = M -> (
+    assPrimes := ass(comodule M);
+    sum apply(assPrimes, P -> degree(saturate(M,P)/M)/degree(P))
 )
 
 
@@ -140,7 +140,7 @@ R = QQ[x,y,z];
 U = image(matrix {
     {x^2,x*y,x*z},
     {y^2,y*z,z^2}});
-elapsedTime netList solvePDE U
+netList solvePDE U
 
 R = QQ[x1,x2,x3,x4]
 k = 2
