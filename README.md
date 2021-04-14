@@ -67,7 +67,7 @@ o5 = |ideal x        |{| 1 |}               |
      +---------------+----------------------+
 ```
 
-### Example 2
+### Example 2: modules
 ```macaulay2
 $ M2 solvePDE.m2
 Macaulay2, version 1.17.2.1
