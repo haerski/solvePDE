@@ -97,8 +97,7 @@ reducedNoetherianOperators (Module, Module, Ideal) := List => opts -> (a,b,P) ->
                 else basis(0,0, R^(rank M));
 
     multiplierMatrix := (Pbasis * PK);
-
-    apply(numColumns multiplierMatrix, i -> multiplierMatrix_i)
+    apply(numColumns multiplierMatrix, i ->mingens image matrix  multiplierMatrix_i)
 ) 
 
 end
